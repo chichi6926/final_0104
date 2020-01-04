@@ -1,0 +1,979 @@
+@charset "UTF-8";
+* {
+  /*   border: solid 1px black; */
+  font-family: 微軟正黑體;
+}
+
+body {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  color: rgba(237, 237, 237, 0.85);
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  -webkit-animation: back 8s infinite;
+          animation: back 8s infinite;
+}
+
+.resume {
+  display: flex;
+  max-width: 950px;
+  /*   border: solid 4px rgba( 237, 237, 237, 0.85); */
+  position: relative;
+  border-radius: 10px;
+  background-color: rgba(76, 94, 83, 0.85);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+.left, .right {
+  padding: 20px;
+}
+
+.left {
+  flex: 5;
+}
+
+.right {
+  flex: 5;
+  padding-top: 160px;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  color: rgba(237, 237, 237, 0.85);
+}
+
+h2 {
+  margin: 0px;
+  margin-bottom: 25px;
+}
+
+h2::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 8px;
+  background-color: #ed93ae;
+  margin-left: 10px;
+}
+
+hr {
+  background-color: #ed93ae;
+  border: 0px;
+  height: 5px;
+  display: relative;
+  margin-left: 0px;
+}
+
+h4 {
+  margin: 0px;
+  margin-top: 40px;
+}
+
+p {
+  text-align: justify;
+}
+
+.year li {
+  margin-left: 20px;
+  border-left: solid 4px rgba(237, 237, 237, 0.85);
+  padding-left: 10px;
+}
+
+.decoration {
+  width: 280px;
+  height: 120px;
+  background: linear-gradient(135deg, #ed93ae, #ededed);
+  border-radius: 70px 0px 0px 70px;
+  position: absolute;
+  right: 0px;
+  top: 50px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(237, 237, 237, 0.3);
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.circle::after {
+  content: "";
+  display: block;
+  background-color: rgba(76, 94, 83, 0.8);
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.p90, .p180, .p270, .p360 {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-color: #ed93ae;
+}
+
+.test li {
+  display: inline-block;
+}
+
+.p180 {
+  left: 50%;
+  top: 50%;
+}
+
+.p270 {
+  left: 0;
+  top: 50%;
+}
+
+.p360 {
+  left: 0;
+  top: 0;
+}
+
+.listLicense .bar {
+  width: 70%;
+  height: 10px;
+  border: solid 2px #ed93ae;
+  border-radius: 5px;
+}
+
+.value {
+  height: 100%;
+  width: 60%;
+  background-color: #ed93ae;
+}
+
+.value.p100 {
+  width: 100%;
+}
+
+.value.p70 {
+  width: 70%;
+}
+
+.value.p60 {
+  width: 60%;
+}
+
+.allsnow {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+  z-index: -3;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+@-webkit-keyframes falling {
+  0%,100% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  0% {
+    -webkit-transform: translate(0%, 100px);
+            transform: translate(0%, 100px);
+  }
+  100% {
+    -webkit-transform: translate(100px, 100%);
+            transform: translate(100px, 100%);
+  }
+}
+@keyframes falling {
+  0%,100% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  0% {
+    -webkit-transform: translate(0%, 100px);
+            transform: translate(0%, 100px);
+  }
+  100% {
+    -webkit-transform: translate(100px, 100%);
+            transform: translate(100px, 100%);
+  }
+}
+.allsnow [class*='snow'] {
+  background: linear-gradient(180deg, #b9deed, #efefef);
+  width: 3px;
+  height: 30px;
+  border-radius: 20%;
+  -webkit-animation: falling 10s infinite;
+          animation: falling 10s infinite;
+}
+.allsnow .snow1 {
+  position: absolute;
+  left: 69.2902083763%;
+  top: 23.6179496093%;
+  -webkit-animation-delay: -6s;
+          animation-delay: -6s;
+}
+.allsnow .snow2 {
+  position: absolute;
+  left: 7.8110973301%;
+  top: 33.1529529148%;
+  -webkit-animation-delay: -12s;
+          animation-delay: -12s;
+}
+.allsnow .snow3 {
+  position: absolute;
+  left: 32.8414117316%;
+  top: 89.9594297527%;
+  -webkit-animation-delay: -18s;
+          animation-delay: -18s;
+}
+.allsnow .snow4 {
+  position: absolute;
+  left: 60.8171631475%;
+  top: -5.5504073061%;
+  -webkit-animation-delay: -24s;
+          animation-delay: -24s;
+}
+.allsnow .snow5 {
+  position: absolute;
+  left: 44.4048825887%;
+  top: 1.782146485%;
+  -webkit-animation-delay: -30s;
+          animation-delay: -30s;
+}
+.allsnow .snow6 {
+  position: absolute;
+  left: 69.9091656507%;
+  top: 56.2111524232%;
+  -webkit-animation-delay: -36s;
+          animation-delay: -36s;
+}
+.allsnow .snow7 {
+  position: absolute;
+  left: 96.4224254066%;
+  top: 18.619016444%;
+  -webkit-animation-delay: -42s;
+          animation-delay: -42s;
+}
+.allsnow .snow8 {
+  position: absolute;
+  left: 60.5524878047%;
+  top: 28.9796499254%;
+  -webkit-animation-delay: -48s;
+          animation-delay: -48s;
+}
+.allsnow .snow9 {
+  position: absolute;
+  left: 15.6304558602%;
+  top: 57.0915614092%;
+  -webkit-animation-delay: -54s;
+          animation-delay: -54s;
+}
+.allsnow .snow10 {
+  position: absolute;
+  left: 12.3343117856%;
+  top: 78.3198254284%;
+  -webkit-animation-delay: -60s;
+          animation-delay: -60s;
+}
+.allsnow .snow11 {
+  position: absolute;
+  left: 4.5040128176%;
+  top: 86.8564591585%;
+  -webkit-animation-delay: -66s;
+          animation-delay: -66s;
+}
+.allsnow .snow12 {
+  position: absolute;
+  left: 82.3783317863%;
+  top: 8.5121377616%;
+  -webkit-animation-delay: -72s;
+          animation-delay: -72s;
+}
+.allsnow .snow13 {
+  position: absolute;
+  left: 25.4294100354%;
+  top: 13.2683256553%;
+  -webkit-animation-delay: -78s;
+          animation-delay: -78s;
+}
+.allsnow .snow14 {
+  position: absolute;
+  left: 39.3341014198%;
+  top: 14.6484766653%;
+  -webkit-animation-delay: -84s;
+          animation-delay: -84s;
+}
+.allsnow .snow15 {
+  position: absolute;
+  left: 2.8649737417%;
+  top: 6.4057357011%;
+  -webkit-animation-delay: -90s;
+          animation-delay: -90s;
+}
+.allsnow .snow16 {
+  position: absolute;
+  left: 99.3086395639%;
+  top: 84.4209413447%;
+  -webkit-animation-delay: -96s;
+          animation-delay: -96s;
+}
+.allsnow .snow17 {
+  position: absolute;
+  left: 31.4170999004%;
+  top: 14.5483299053%;
+  -webkit-animation-delay: -102s;
+          animation-delay: -102s;
+}
+.allsnow .snow18 {
+  position: absolute;
+  left: 54.4564337812%;
+  top: 12.694725619%;
+  -webkit-animation-delay: -108s;
+          animation-delay: -108s;
+}
+.allsnow .snow19 {
+  position: absolute;
+  left: 27.9042865888%;
+  top: 80.523279493%;
+  -webkit-animation-delay: -114s;
+          animation-delay: -114s;
+}
+.allsnow .snow20 {
+  position: absolute;
+  left: 37.7603124091%;
+  top: 47.4347543996%;
+  -webkit-animation-delay: -120s;
+          animation-delay: -120s;
+}
+.allsnow .snow21 {
+  position: absolute;
+  left: 69.7192944745%;
+  top: 65.3492316669%;
+  -webkit-animation-delay: -126s;
+          animation-delay: -126s;
+}
+.allsnow .snow22 {
+  position: absolute;
+  left: 82.7097972793%;
+  top: 35.9009041967%;
+  -webkit-animation-delay: -132s;
+          animation-delay: -132s;
+}
+.allsnow .snow23 {
+  position: absolute;
+  left: 51.8775353592%;
+  top: 53.3046908783%;
+  -webkit-animation-delay: -138s;
+          animation-delay: -138s;
+}
+.allsnow .snow24 {
+  position: absolute;
+  left: 79.0909301861%;
+  top: 68.924913003%;
+  -webkit-animation-delay: -144s;
+          animation-delay: -144s;
+}
+.allsnow .snow25 {
+  position: absolute;
+  left: 17.7515951528%;
+  top: 87.9150168809%;
+  -webkit-animation-delay: -150s;
+          animation-delay: -150s;
+}
+.allsnow .snow26 {
+  position: absolute;
+  left: 40.1046266133%;
+  top: 46.8610802635%;
+  -webkit-animation-delay: -156s;
+          animation-delay: -156s;
+}
+.allsnow .snow27 {
+  position: absolute;
+  left: 6.1818645171%;
+  top: 11.5395681855%;
+  -webkit-animation-delay: -162s;
+          animation-delay: -162s;
+}
+.allsnow .snow28 {
+  position: absolute;
+  left: 80.34051119%;
+  top: 43.1231826321%;
+  -webkit-animation-delay: -168s;
+          animation-delay: -168s;
+}
+.allsnow .snow29 {
+  position: absolute;
+  left: 95.1162413616%;
+  top: 75.6165411914%;
+  -webkit-animation-delay: -174s;
+          animation-delay: -174s;
+}
+.allsnow .snow30 {
+  position: absolute;
+  left: 82.9462056599%;
+  top: 0.0696408419%;
+  -webkit-animation-delay: -180s;
+          animation-delay: -180s;
+}
+.allsnow .snow31 {
+  position: absolute;
+  left: 87.6945471676%;
+  top: 67.9052574927%;
+  -webkit-animation-delay: -186s;
+          animation-delay: -186s;
+}
+.allsnow .snow32 {
+  position: absolute;
+  left: 87.24847492%;
+  top: 34.7439851601%;
+  -webkit-animation-delay: -192s;
+          animation-delay: -192s;
+}
+.allsnow .snow33 {
+  position: absolute;
+  left: 19.8972668248%;
+  top: -5.2196157601%;
+  -webkit-animation-delay: -198s;
+          animation-delay: -198s;
+}
+.allsnow .snow34 {
+  position: absolute;
+  left: 95.5986437638%;
+  top: 46.6178598089%;
+  -webkit-animation-delay: -204s;
+          animation-delay: -204s;
+}
+.allsnow .snow35 {
+  position: absolute;
+  left: 3.2005655163%;
+  top: 38.6171480304%;
+  -webkit-animation-delay: -210s;
+          animation-delay: -210s;
+}
+.allsnow .snow36 {
+  position: absolute;
+  left: 3.2746796935%;
+  top: 19.104333181%;
+  -webkit-animation-delay: -216s;
+          animation-delay: -216s;
+}
+.allsnow .snow37 {
+  position: absolute;
+  left: 92.4600577413%;
+  top: 88.162507248%;
+  -webkit-animation-delay: -222s;
+          animation-delay: -222s;
+}
+.allsnow .snow38 {
+  position: absolute;
+  left: 43.8478613335%;
+  top: 0.49870844%;
+  -webkit-animation-delay: -228s;
+          animation-delay: -228s;
+}
+.allsnow .snow39 {
+  position: absolute;
+  left: 4.5808128967%;
+  top: 5.3161075366%;
+  -webkit-animation-delay: -234s;
+          animation-delay: -234s;
+}
+.allsnow .snow40 {
+  position: absolute;
+  left: 47.2893869933%;
+  top: 54.8690070191%;
+  -webkit-animation-delay: -240s;
+          animation-delay: -240s;
+}
+.allsnow .snow41 {
+  position: absolute;
+  left: 72.6363164443%;
+  top: 4.0822987966%;
+  -webkit-animation-delay: -246s;
+          animation-delay: -246s;
+}
+.allsnow .snow42 {
+  position: absolute;
+  left: 50.8022565068%;
+  top: 60.0060699976%;
+  -webkit-animation-delay: -252s;
+          animation-delay: -252s;
+}
+.allsnow .snow43 {
+  position: absolute;
+  left: 80.9511382607%;
+  top: 86.2618342754%;
+  -webkit-animation-delay: -258s;
+          animation-delay: -258s;
+}
+.allsnow .snow44 {
+  position: absolute;
+  left: 28.1168989265%;
+  top: 1.0467178596%;
+  -webkit-animation-delay: -264s;
+          animation-delay: -264s;
+}
+.allsnow .snow45 {
+  position: absolute;
+  left: 73.118091285%;
+  top: 9.2269389032%;
+  -webkit-animation-delay: -270s;
+          animation-delay: -270s;
+}
+.allsnow .snow46 {
+  position: absolute;
+  left: 58.7476130661%;
+  top: 29.279050052%;
+  -webkit-animation-delay: -276s;
+          animation-delay: -276s;
+}
+.allsnow .snow47 {
+  position: absolute;
+  left: 60.5844486006%;
+  top: 33.7010197763%;
+  -webkit-animation-delay: -282s;
+          animation-delay: -282s;
+}
+.allsnow .snow48 {
+  position: absolute;
+  left: 11.6400034126%;
+  top: 71.5401022599%;
+  -webkit-animation-delay: -288s;
+          animation-delay: -288s;
+}
+.allsnow .snow49 {
+  position: absolute;
+  left: 94.963232209%;
+  top: 71.100027319%;
+  -webkit-animation-delay: -294s;
+          animation-delay: -294s;
+}
+.allsnow .snow50 {
+  position: absolute;
+  left: 94.6848938793%;
+  top: 49.129614887%;
+  -webkit-animation-delay: -300s;
+          animation-delay: -300s;
+}
+.allsnow .snow51 {
+  position: absolute;
+  left: 66.1821541246%;
+  top: 74.3355773391%;
+  -webkit-animation-delay: -306s;
+          animation-delay: -306s;
+}
+.allsnow .snow52 {
+  position: absolute;
+  left: 18.1893675048%;
+  top: 2.8296748906%;
+  -webkit-animation-delay: -312s;
+          animation-delay: -312s;
+}
+.allsnow .snow53 {
+  position: absolute;
+  left: 41.1231934908%;
+  top: 73.5520745895%;
+  -webkit-animation-delay: -318s;
+          animation-delay: -318s;
+}
+.allsnow .snow54 {
+  position: absolute;
+  left: 59.9247428802%;
+  top: 77.5982740641%;
+  -webkit-animation-delay: -324s;
+          animation-delay: -324s;
+}
+.allsnow .snow55 {
+  position: absolute;
+  left: 38.6203060332%;
+  top: 65.217526819%;
+  -webkit-animation-delay: -330s;
+          animation-delay: -330s;
+}
+.allsnow .snow56 {
+  position: absolute;
+  left: 8.5562240011%;
+  top: 55.7623133084%;
+  -webkit-animation-delay: -336s;
+          animation-delay: -336s;
+}
+.allsnow .snow57 {
+  position: absolute;
+  left: 75.9043504181%;
+  top: 73.5873547896%;
+  -webkit-animation-delay: -342s;
+          animation-delay: -342s;
+}
+.allsnow .snow58 {
+  position: absolute;
+  left: 90.8277039358%;
+  top: -5.1936438945%;
+  -webkit-animation-delay: -348s;
+          animation-delay: -348s;
+}
+.allsnow .snow59 {
+  position: absolute;
+  left: 70.091434142%;
+  top: 13.2936538209%;
+  -webkit-animation-delay: -354s;
+          animation-delay: -354s;
+}
+.allsnow .snow60 {
+  position: absolute;
+  left: 95.3997669219%;
+  top: 25.7802781213%;
+  -webkit-animation-delay: -360s;
+          animation-delay: -360s;
+}
+.allsnow .snow61 {
+  position: absolute;
+  left: 98.5842550891%;
+  top: 80.5783088486%;
+  -webkit-animation-delay: -366s;
+          animation-delay: -366s;
+}
+.allsnow .snow62 {
+  position: absolute;
+  left: 71.4985445256%;
+  top: 0.7038440649%;
+  -webkit-animation-delay: -372s;
+          animation-delay: -372s;
+}
+.allsnow .snow63 {
+  position: absolute;
+  left: 46.3516674618%;
+  top: 37.5700988496%;
+  -webkit-animation-delay: -378s;
+          animation-delay: -378s;
+}
+.allsnow .snow64 {
+  position: absolute;
+  left: 88.929695999%;
+  top: 9.8526953263%;
+  -webkit-animation-delay: -384s;
+          animation-delay: -384s;
+}
+.allsnow .snow65 {
+  position: absolute;
+  left: 99.2221677398%;
+  top: 77.9982111847%;
+  -webkit-animation-delay: -390s;
+          animation-delay: -390s;
+}
+.allsnow .snow66 {
+  position: absolute;
+  left: 42.3659033465%;
+  top: 27.8736187278%;
+  -webkit-animation-delay: -396s;
+          animation-delay: -396s;
+}
+.allsnow .snow67 {
+  position: absolute;
+  left: 89.3598465353%;
+  top: 32.6671148552%;
+  -webkit-animation-delay: -402s;
+          animation-delay: -402s;
+}
+.allsnow .snow68 {
+  position: absolute;
+  left: 84.7760325751%;
+  top: 46.212462768%;
+  -webkit-animation-delay: -408s;
+          animation-delay: -408s;
+}
+.allsnow .snow69 {
+  position: absolute;
+  left: 89.8163534343%;
+  top: 5.3147545292%;
+  -webkit-animation-delay: -414s;
+          animation-delay: -414s;
+}
+.allsnow .snow70 {
+  position: absolute;
+  left: 86.0944795008%;
+  top: 27.6260829582%;
+  -webkit-animation-delay: -420s;
+          animation-delay: -420s;
+}
+.allsnow .snow71 {
+  position: absolute;
+  left: 89.9113551052%;
+  top: -8.4979267279%;
+  -webkit-animation-delay: -426s;
+          animation-delay: -426s;
+}
+.allsnow .snow72 {
+  position: absolute;
+  left: 96.8895709917%;
+  top: 34.4883723043%;
+  -webkit-animation-delay: -432s;
+          animation-delay: -432s;
+}
+.allsnow .snow73 {
+  position: absolute;
+  left: 61.5157043329%;
+  top: 0.206533234%;
+  -webkit-animation-delay: -438s;
+          animation-delay: -438s;
+}
+.allsnow .snow74 {
+  position: absolute;
+  left: 93.3300290903%;
+  top: 57.2584707546%;
+  -webkit-animation-delay: -444s;
+          animation-delay: -444s;
+}
+.allsnow .snow75 {
+  position: absolute;
+  left: 46.3486082624%;
+  top: 69.4750198838%;
+  -webkit-animation-delay: -450s;
+          animation-delay: -450s;
+}
+.allsnow .snow76 {
+  position: absolute;
+  left: 35.9341421359%;
+  top: -5.289514285%;
+  -webkit-animation-delay: -456s;
+          animation-delay: -456s;
+}
+.allsnow .snow77 {
+  position: absolute;
+  left: 79.2701824562%;
+  top: 81.3056023684%;
+  -webkit-animation-delay: -462s;
+          animation-delay: -462s;
+}
+.allsnow .snow78 {
+  position: absolute;
+  left: 27.6417442962%;
+  top: 71.0450974242%;
+  -webkit-animation-delay: -468s;
+          animation-delay: -468s;
+}
+.allsnow .snow79 {
+  position: absolute;
+  left: 66.0735748975%;
+  top: 79.893088613%;
+  -webkit-animation-delay: -474s;
+          animation-delay: -474s;
+}
+.allsnow .snow80 {
+  position: absolute;
+  left: 62.4600156418%;
+  top: 87.9749702496%;
+  -webkit-animation-delay: -480s;
+          animation-delay: -480s;
+}
+.allsnow .snow81 {
+  position: absolute;
+  left: 38.0400244881%;
+  top: 85.8705778068%;
+  -webkit-animation-delay: -486s;
+          animation-delay: -486s;
+}
+.allsnow .snow82 {
+  position: absolute;
+  left: 61.0971100841%;
+  top: -0.0014753636%;
+  -webkit-animation-delay: -492s;
+          animation-delay: -492s;
+}
+.allsnow .snow83 {
+  position: absolute;
+  left: 4.6528637258%;
+  top: 34.9610301014%;
+  -webkit-animation-delay: -498s;
+          animation-delay: -498s;
+}
+.allsnow .snow84 {
+  position: absolute;
+  left: 35.6078123168%;
+  top: 42.9739712666%;
+  -webkit-animation-delay: -504s;
+          animation-delay: -504s;
+}
+.allsnow .snow85 {
+  position: absolute;
+  left: 83.8313228097%;
+  top: 20.9060505847%;
+  -webkit-animation-delay: -510s;
+          animation-delay: -510s;
+}
+.allsnow .snow86 {
+  position: absolute;
+  left: 6.8467090658%;
+  top: -0.8762672879%;
+  -webkit-animation-delay: -516s;
+          animation-delay: -516s;
+}
+.allsnow .snow87 {
+  position: absolute;
+  left: 16.6760140439%;
+  top: 8.2421550648%;
+  -webkit-animation-delay: -522s;
+          animation-delay: -522s;
+}
+.allsnow .snow88 {
+  position: absolute;
+  left: 54.5760772918%;
+  top: 10.5364219359%;
+  -webkit-animation-delay: -528s;
+          animation-delay: -528s;
+}
+.allsnow .snow89 {
+  position: absolute;
+  left: 0.9259239513%;
+  top: 68.3793204271%;
+  -webkit-animation-delay: -534s;
+          animation-delay: -534s;
+}
+.allsnow .snow90 {
+  position: absolute;
+  left: 48.9387991973%;
+  top: -4.3106294458%;
+  -webkit-animation-delay: -540s;
+          animation-delay: -540s;
+}
+.allsnow .snow91 {
+  position: absolute;
+  left: 78.6581703453%;
+  top: 1.4218161523%;
+  -webkit-animation-delay: -546s;
+          animation-delay: -546s;
+}
+.allsnow .snow92 {
+  position: absolute;
+  left: 91.2617166283%;
+  top: 12.7158123427%;
+  -webkit-animation-delay: -552s;
+          animation-delay: -552s;
+}
+.allsnow .snow93 {
+  position: absolute;
+  left: 6.04396573%;
+  top: 8.7002800336%;
+  -webkit-animation-delay: -558s;
+          animation-delay: -558s;
+}
+.allsnow .snow94 {
+  position: absolute;
+  left: 97.4674807136%;
+  top: 76.7828695587%;
+  -webkit-animation-delay: -564s;
+          animation-delay: -564s;
+}
+.allsnow .snow95 {
+  position: absolute;
+  left: 62.2059527065%;
+  top: 36.5111870535%;
+  -webkit-animation-delay: -570s;
+          animation-delay: -570s;
+}
+.allsnow .snow96 {
+  position: absolute;
+  left: 53.7282194081%;
+  top: 8.2344177802%;
+  -webkit-animation-delay: -576s;
+          animation-delay: -576s;
+}
+.allsnow .snow97 {
+  position: absolute;
+  left: 2.4291967772%;
+  top: 54.5114627556%;
+  -webkit-animation-delay: -582s;
+          animation-delay: -582s;
+}
+.allsnow .snow98 {
+  position: absolute;
+  left: 17.6656484626%;
+  top: 60.8760527243%;
+  -webkit-animation-delay: -588s;
+          animation-delay: -588s;
+}
+.allsnow .snow99 {
+  position: absolute;
+  left: 67.1200288264%;
+  top: 49.1960342189%;
+  -webkit-animation-delay: -594s;
+          animation-delay: -594s;
+}
+.allsnow .snow100 {
+  position: absolute;
+  left: 40.729651512%;
+  top: 39.4184947519%;
+  -webkit-animation-delay: -600s;
+          animation-delay: -600s;
+}
+
+@keyframes falling {
+  0%,100% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  0% {
+    -webkit-transform: translate(0%, -300px);
+            transform: translate(0%, -300px);
+  }
+  100% {
+    -webkit-transform: translate(0px, 80%);
+            transform: translate(0px, 80%);
+  }
+}
+@-webkit-keyframes back {
+  0% {
+    background-color: #9599E2;
+  }
+  25% {
+    background-color: #BFC5F9;
+  }
+  50% {
+    background-color: #F5BDEE;
+  }
+  75% {
+    background-color: #FFBBEC;
+  }
+  90% {
+    background-color: #8BC6EC;
+  }
+  100% {
+    background-color: #9599E2;
+  }
+}
+@keyframes back {
+  0% {
+    background-color: #9599E2;
+  }
+  25% {
+    background-color: #BFC5F9;
+  }
+  50% {
+    background-color: #F5BDEE;
+  }
+  75% {
+    background-color: #FFBBEC;
+  }
+  90% {
+    background-color: #8BC6EC;
+  }
+  100% {
+    background-color: #9599E2;
+  }
+}
